@@ -25,8 +25,11 @@ function Products() {
     <section className="products container">
       
       {
-        products.map((product)=> <ProductCard key={product.id} data={{product}} />)
+        products.map((product) => <ProductCard key={product.id} data={product} />)
       }
+
+    
+
       
       
     </section>
