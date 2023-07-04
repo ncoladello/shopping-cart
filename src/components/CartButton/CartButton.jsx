@@ -7,11 +7,15 @@ import AppContext from '../../context/AppContext';
 
 function CartButton(){
 
-  const {cartItems} = useContext(AppContext);
+  const {cartItems,isCartVisible, setIsCartVisible} = useContext(AppContext);
 
 
   return(  
-    <button type="button" className="cart__button">
+    <button 
+      type="button" 
+      className="cart__button"
+      onClick={()=> setIsCartVisible(!isCartVisible)}
+    >
       <AiOutlineShoppingCart/>
 
 
