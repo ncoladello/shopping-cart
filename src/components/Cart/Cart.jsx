@@ -13,7 +13,7 @@ function Cart(){
 
   return(
 
-    <section className="cart">
+    <section className="cart cart--active">
 
       <div className="cart-items">
         {cartItems.map((cartItem) => <CartItem key={cartItem.id} data={cartItem}/>)}      
